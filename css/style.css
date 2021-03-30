@@ -32,6 +32,7 @@
     white-space: nowrap;
 }
 
+.about__title-mobile,
 .about__title {
     font-weight: bold;
     color: #141414;
@@ -68,6 +69,7 @@
     }
 
     /*Titles*/
+    .about__title-mobile,
     .about__title,
     .body__title {
         font-size: calc(20px + (34 + 34 * .7) * ((100vw - 320px) / 1920));
@@ -251,6 +253,21 @@
     align-items: center;
 }
 
+.about__title-mobile {
+    display: none;
+}
+
+@media(max-width: 342px) {
+    .about__title-mobile {
+        display: block;
+    }
+
+    .about__title {
+        display: none;
+    }
+}
+
+.about__title-mobile,
 .about__title {
     text-align: center;
 }

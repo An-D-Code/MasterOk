@@ -3,7 +3,7 @@
 }
 
 
-/*---------------ШРИФТЫ--------------*/
+/*-----------------------------------------------------ШРИФТЫ----------------------------------------------------*/
 .head__contacts-item {
     font-size: calc(10px + 14 * (100vw / 1920));
     font-weight: bold;
@@ -33,7 +33,24 @@
 }
 
 .about__title {
+    font-weight: bold;
+    color: #141414;
     font-size: calc(20px + 34 * (100vw / 1920));
+}
+
+.about__subtitle {
+    text-align: center;
+    font-size: calc(14px + 11 * (100vw / 1920));
+    font-weight: 800;
+    color: #333;
+}
+
+.item__title {
+    font-size: calc(20px + 10 * (100vw / 1920));
+}
+
+.item__text {
+    font-size: calc(10px + 10 * (100vw / 1920));
 }
 
 @media(max-width: 767px) {
@@ -46,6 +63,10 @@
     .body__btn {
         font-size: calc(15px + (17 + 17 * .7) * ((100vw - 320px) / 1920));
     }
+    .item__title {
+        font-size: calc(20px + (10 + 10 * .7) * ((100vw - 320px) / 1920));
+    }
+
     /*Titles*/
     .about__title,
     .body__title {
@@ -53,9 +74,13 @@
     }
 
     /*subtitles*/
-
+    .about__subtitle {
+        font-size: calc(14px + (11 + 11 * .7) * ((100vw - 320px) / 1920));
+    }
 }
 
+
+/*---------------------------------------------------------HEADER---------------------------------------------------------*/
 
 /* -----------------------HEADER__HEAD ------------------------*/
 
@@ -185,7 +210,7 @@
 }
 
 
-/* HEADER__BODY */
+/* -------------------HEADER__BODY------------------- */
 
 .body {
     background: url('../image/bg_1.jpg') center / cover;
@@ -199,7 +224,7 @@
     align-items: flex-start;
     max-width: 95.5%;
     margin: 0 auto;
-    padding: 43px 0;
+    padding: 2em 0;
 }
 
 .body__btn {
@@ -209,29 +234,57 @@
     padding-left: calc(10px + 49 * (100vw / 1920)); 
     padding-right: calc(10px + 49 * (100vw / 1920));
     border-radius: 7px;
-    margin-top: 45px;
+    margin-top: 1em;
 }
 
-/*-------------------ABOUT------------------------------*/
+/*---------------------------------------------------------ABOUT-------------------------------------------------*/
+
+.about {
+    padding: 44px 0 44px 0;
+}
 
 .about__container {
     max-width: 95.5%;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about__title {
+    text-align: center;
 }
 
 .about__subtitle {
+    margin-top: calc(13px + 2 * (100vw / 1920));
+    max-width: 1403px;
 }
-.about__cards {
-}
+
 .cards {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: calc(13px + 30 * (100vw / 1920));
 }
-.cards__item {
-}
+
 .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(20, 20, 20, .05);
+    padding: 20px 32px;
 }
 .item__img {
 }
 .item__title {
+    margin-top: 30px;
+    color: #FEBA43;
+    font-weight: 900;
 }
 .item__text {
+    max-width: 471px;
+    margin-top: 15px;
+    text-align: center;
+    color: #333;
+    font-weight: 800;
 }

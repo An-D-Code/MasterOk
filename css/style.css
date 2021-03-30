@@ -149,7 +149,7 @@
 /* HEADER__BODY */
 
 .body {
-    background: url('../image/bg_1.jpg');
+    background: url('../image/bg_1.jpg') center / cover;
     color: #141414;
 }
 
